@@ -187,3 +187,11 @@ address a{
     font-size: 2rem;
   }
 }
+
+#map{
+  height: 250px;
+
+  @media(min-width: 768px){
+    height: 500px;
+  }
+}

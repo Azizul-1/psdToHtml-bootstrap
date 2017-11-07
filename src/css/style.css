@@ -144,3 +144,9 @@ address a {
   @media (min-width: 768px) {
     .location-title {
       font-size: 2rem; } }
+
+#map {
+  height: 250px; }
+  @media (min-width: 768px) {
+    #map {
+      height: 500px; } }
