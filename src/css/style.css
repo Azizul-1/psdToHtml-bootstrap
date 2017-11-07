@@ -44,6 +44,10 @@ address a {
     .navbar-brand {
       transform: scale(1); } }
 
+.footer .navbar-brand {
+  background: url("../assets/images/footer-logo.png") left center no-repeat;
+  padding: 20px 100px; }
+
 .navbar-light .navbar-nav .nav-link {
   color: #25282d; }
 
@@ -164,3 +168,9 @@ address a {
 
 .footerTop-bg {
   background-color: #EBE5D7; }
+
+.footer {
+  padding: 1rem 0; }
+
+.footer .nav-link {
+  color: #25282d; }
