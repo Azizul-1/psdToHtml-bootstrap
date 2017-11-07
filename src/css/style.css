@@ -5,6 +5,20 @@ button:hover {
   cursor: pointer;
   font-weight: 500; }
 
+address a {
+  color: #3e84da;
+  font-weight: 300; }
+  @media (min-width: 768px) {
+    address a {
+      font-size: 1.2rem; } }
+
+.list-unstyled li {
+  color: #25282d;
+  font-weight: 400; }
+  @media (min-width: 768px) {
+    .list-unstyled li {
+      font-size: 1.2rem; } }
+
 .section-padding {
   padding: 2rem 0; }
   @media (min-width: 768px) {
@@ -106,3 +120,27 @@ button:hover {
   @media (min-width: 992px) {
     .hero__form :-ms-input-placeholder {
       font-size: 1.2rem; } }
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 300;
+  border-left: 5px solid #3e84da;
+  padding-left: 1rem; }
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 3rem; } }
+
+.work-title {
+  font-size: 1.3rem;
+  font-weight: 300; }
+  @media (min-width: 768px) {
+    .work-title {
+      font-size: 2rem; } }
+
+.location-title {
+  font-size: 1.3rem;
+  color: #3e84da;
+  font-weight: 300; }
+  @media (min-width: 768px) {
+    .location-title {
+      font-size: 2rem; } }
