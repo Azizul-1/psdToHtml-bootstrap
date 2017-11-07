@@ -28,4 +28,26 @@ gulp.task("server", ["sass"], function(){
   gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 
+gulp.task("copyImages", function(){
+  return gulp.src("./src/assets/images/**/*")
+    .pipe(gulp.dest("./docs/assets/images"));
+});
+
+gulp.task("copyHtml", function(){
+  return gulp.src("./src/index.html")
+    .pipe(gulp.dest("./docs"));
+});
+
+gulp.task("copyJs", function(){
+  return gulp.src("./src/js/**/*")
+    .pipe(gulp.dest("./docs/assets/scripts"));
+});
+
+gulp.task("copyCss", function(){
+  return gulp.src("./src/css/**/*")
+    .pipe(gulp.dest("./docs/assets/styles"));
+});
+
+gulp.task("build", ["copyImages","copyHtml","copyJs","copyCss"]);
+
 gulp.task("default", ["js", "server"]);
