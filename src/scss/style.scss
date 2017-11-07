@@ -1,3 +1,20 @@
+.container{
+  max-width: 1300px;
+}
+
+button:hover{
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.section-padding{
+  padding: 2rem 0;
+
+  @media(min-width: 768px){
+    padding: 5rem 0;
+  }
+}
+
 .navbar-brand{
 	background: url("../assets/images/logo.png") left center no-repeat;
   text-indent: -9999px;
@@ -23,7 +40,100 @@
   padding: .375rem 1.3rem;
   box-shadow: 2.5px 4.33px 10px 0px rgba(43, 163, 232, 0.22);
 
-  @media(min-width: 992px){
+  @media(min-width: 768px){
     padding: .575rem 1.5rem;
   }
 }
+
+.hero{
+
+  &--bg{
+    background-color: rgb( 62, 132, 218 );
+  }
+
+  &__title{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+
+    @media (min-width: 768px){
+      font-size: 3.5rem;
+    }
+
+    @media (min-width: 992px){
+      font-size: 4.5rem;
+    }
+  }
+
+  &__subtitle{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 100;
+    line-height: 1.2;
+    max-width: 62.5rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 768px){
+      font-size: 1.8rem;
+    }
+
+    @media (min-width: 992px){
+      font-size: 2.5rem;
+    }
+  }
+
+  &__form{
+    max-width: 62.5rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    & .form-control:not(.custom-control){
+      height: 40px;
+      padding: 0 20px;
+
+      @media (min-width: 992px){
+        height: 50px;
+      }
+    }
+  }
+}
+
+.hero__form ::-webkit-input-placeholder {
+  color: #25282d;
+
+  @media (min-width: 992px){
+    font-size: 1.2rem;
+  }
+}
+
+.hero__form :-moz-placeholder {
+  /* FF 4-18 */
+  font-size: 1.2rem;
+  color: #25282d;
+  
+  @media (min-width: 992px){
+    font-size: 1.2rem;
+  }
+}
+
+.hero__form ::-moz-placeholder {
+  /* FF 19+ */
+  font-size: 1.2rem;
+  color: #25282d;
+
+  @media (min-width: 992px){
+    font-size: 1.2rem;
+  }
+}
+
+.hero__form :-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 1.2rem;
+  color: #25282d;
+
+  @media (min-width: 992px){
+    font-size: 1.2rem;
+  }
+}
+
