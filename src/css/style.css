@@ -25,6 +25,12 @@ address a {
     .section-padding {
       padding: 5rem 0; } }
 
+.section-padding--large {
+  padding: 5rem 0; }
+  @media (min-width: 992px) {
+    .section-padding--large {
+      padding: 10rem 0; } }
+
 .navbar-brand {
   background: url("../assets/images/logo.png") left center no-repeat;
   text-indent: -9999px;
@@ -48,6 +54,11 @@ address a {
   @media (min-width: 768px) {
     .btn {
       padding: .575rem 1.5rem; } }
+
+.btn--footerTop {
+  color: #25282d;
+  border-color: #3e84da;
+  box-shadow: none; }
 
 .hero--bg {
   background-color: #3e84da; }
@@ -150,3 +161,6 @@ address a {
   @media (min-width: 768px) {
     #map {
       height: 500px; } }
+
+.footerTop-bg {
+  background-color: #EBE5D7; }
