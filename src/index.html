@@ -39,28 +39,36 @@
           <p class="hero__subtitle">If you think we'd be a good fit for your next project or have an idea you'd like to share with us, we'd love to hear all about it. </p>
         </div>
         <div class="hero__form pt-lg-5 pb-lg-3">
-          <form action="">
+          <form action="" id="needs-validation" novalidate>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group mb-4">
                   <input type="text" class="form-control rounded-0 border-0" placeholder="Your Name" required>
+                  <div class="invalid-feedback">
+                    What's your name, stranger?
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group mb-4">
                   <input type="email" class="form-control rounded-0 border-0" placeholder="Your Email" required>
+                  <div class="invalid-feedback">
+                    No spam or unexpected newsletter here.
+                  </div>
                 </div>
               </div>
             </div>
             <div class="form-group mb-4">
               <textarea class="form-control custom-control rounded-0 border-0" rows="8" placeholder="Your Message" required></textarea>
+              <div class="invalid-feedback">
+                What's your message?
+              </div>
             </div>
             <div class="text-center form-group">
               <button class="btn btn-outline-light px-5" type="submit">Submit</button>
             </div>
           </form>
         </div>
-        
       </div>
     </section>
 
@@ -156,5 +164,22 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+
+    <script>
+      $(function(){
+        window.addEventListener('load', function() {
+          var form = document.getElementById('needs-validation');
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        }, false);
+
+
+      });
+    </script>
   </body>
 </html>

@@ -96,6 +96,10 @@ button:hover{
         height: 50px;
       }
     }
+
+    & .invalid-feedback{
+      color: #e9cacd;
+    }
   }
 }
 

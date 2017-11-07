@@ -74,6 +74,8 @@ button:hover {
     @media (min-width: 992px) {
       .hero__form .form-control:not(.custom-control) {
         height: 50px; } }
+  .hero__form .invalid-feedback {
+    color: #e9cacd; }
 
 .hero__form ::-webkit-input-placeholder {
   color: #25282d; }
