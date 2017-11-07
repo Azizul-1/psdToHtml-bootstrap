@@ -1,0 +1,23 @@
+.navbar-brand {
+  background: url("../assets/images/logo.png") left center no-repeat;
+  text-indent: -9999px;
+  padding: 20px 150px;
+  transform: scale(0.5);
+  transform-origin: 0 50%; }
+  @media (min-width: 576px) {
+    .navbar-brand {
+      transform: scale(0.7); } }
+  @media (min-width: 992px) {
+    .navbar-brand {
+      transform: scale(1); } }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #25282d; }
+
+.btn {
+  border-radius: 30px;
+  padding: .375rem 1.3rem;
+  box-shadow: 2.5px 4.33px 10px 0px rgba(43, 163, 232, 0.22); }
+  @media (min-width: 992px) {
+    .btn {
+      padding: .575rem 1.5rem; } }
